@@ -65,7 +65,7 @@ body{
     bottom: 0px;
     z-index: 3;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .image2{
     transition: 2s;
@@ -73,7 +73,7 @@ body{
     bottom: 0px;
     z-index: 2;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .image3{
     transition: 2s;
@@ -81,7 +81,7 @@ body{
     bottom: 0px;
     z-index: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .image4{
     transition: 2s;
@@ -89,7 +89,7 @@ body{
     bottom: 0px;
     z-index: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     
 }
 
