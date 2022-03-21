@@ -1,82 +1,63 @@
 <head>
     <meta charset="utf-8" />
-    <link href="index.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
 </head>
-<body id='body' style="
-    background-image: url(https://live.staticflickr.com/65535/50115566652_3d56ee4a1a_h.jpg);
-    background-size: 100% 100%;
-    margin: 0px;
-    font-family: Proxima Nova,helvetica neue,helvetica,arial,sans-serif;
-    transition: 2s;">
-    <div>
-    
-        <div class="Head">
-            <img src="./image/rsz_kisspng-logo-target-corporation-retail-brand-lexington-5bf69efd12c8967287940215428892130769.png" alt="">
-            <div class="HDiv" tabindex="1" id="container">
-                <input id='input' onclick="Change" className="input" autocomplete="off" style="opacity: 0.6;" type="text" placeholder="Photos, people, or groups" >
-                <img src="./image/lypa.png" alt="" id='img' style="opacity: 0.6;">
-            </div>
-            <div class="HDiv2" >
-                <img src="./image/lypa.png" class="Search" alt="">
-                <a href="/">Log In</a>
-                <button>Sign Up</button>
-            </div>
-        </div>
-        <div class="Body1">
-            <h1>Find your inspiration. </h1>
-            <h3>Join the Flickr community,
-                home to tens of billions of photos and 2 million groups.
-            </h3>
-            <button>Start for free</button>
-        </div>
-        
-    </div>
-    <div class="Bottom">
-        <ul class="BUl">
-            <div>
-                <a>About</a>
-                <a>Jobs</a>
-                <a>Blog</a>
-                <a>Developers</a>
-                <a>Guidelines</a>
-                <a>Help</a>
-            </div>
-            <hr>
-            <div>
-                <a>forum</a>
-                <a>Privacy</a>
-                <a>Terms</a>
-                <a>Cookies</a>
-                <a>English</a>
-                <a>SmugMug</a>
-                <a>+Flickr</a>
-            </div>
-            
-        </ul>
-    </div>
-    <script> 
-        const input = document.getElementById('input')
-        const img = document.getElementById('img')
-        const body = document.getElementById('body')
-        var number = 0
-        const sps = [
-            'url("https://live.staticflickr.com/65535/50115566652_3d56ee4a1a_h.jpg")',
-            'url("https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Secluded_Pete_Rowbottom.jpg")',
-            'url("https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Untitled_Jorge_Guadalupe_Lizarraga.jpg")',
-            'url(https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Tree_and_Morning_Mist_Jos_Buurmans.jpg")'
-        ]
 
-        setTimeout(() => {
-            input.style = ''
-            img.style = ''
-        },900)
+<img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Europes_best_View_Fabian_Fortmann.jpg" class="image" id="img1"></img>
+<img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Sheep_in_the_woods_II_James_Mills.jpg" class="image2" id="img2"></img>
+<img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Tree_and_Morning_Mist_Jos_Buurmans.jpg" class='image3' id="img3">
+<img src="https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Mists_of_renfrew_Adam_Gibbs.jpg" class="image4" id="img4"> 
 
-        setInterval(()=> {
-            number = number + 1
-            if(number == 3){
-                number = 0
-            }
-            body.style.backgroundImage = sps[number]
-        },6000)
-    </script>
+<body id='body'>
+    <div style="position: relative; z-index: 5; height: 100%;">
+        <div>
+            <div class="Head">
+                <img src="./image/rsz_kisspng-logo-target-corporation-retail-brand-lexington-5bf69efd12c8967287940215428892130769.png"
+                    alt="">
+                <div class="HDiv" tabindex="1" id="container">
+                    <input id='input' className="input" autocomplete="off" style="opacity: 0.6;" type="text"
+                        placeholder="Photos, people, or groups">
+                    <img src="./image/lypa.png" alt="" id='img' style="opacity: 0.6;">
+                </div>
+                <div class="HDiv2">
+                    <img src="./image/lypa.png" class="Search" alt="">
+                    <a href="/">Log In</a>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <div class="Body1">
+                <h1>Find your inspiration. </h1>
+                <h3>Join the Flickr community,
+                    home to tens of billions of photos and 2 million groups.
+                </h3>
+                <button>Start for free</button>
+            </div>
+
+        </div>
+        <div class="Bottom">
+            <ul class="BUl">
+                <div>
+                    <a>About</a>
+                    <a>Jobs</a>
+                    <a>Blog</a>
+                    <a>Developers</a>
+                    <a>Guidelines</a>
+                    <a>Help</a>
+                </div>
+                <hr>
+                <div>
+                    <a>forum</a>
+                    <a>Privacy</a>
+                    <a>Terms</a>
+                    <a>Cookies</a>
+                    <a>English</a>
+                    <a>SmugMug</a>
+                    <a>+Flickr</a>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
 </body>
